@@ -1,0 +1,6 @@
+networkx==2.5.1
+numpy==1.23.5
+pandas==1.1.5
+scikit_learn==0.24.0
+torch==1.11.0+cu113
+torchvision==0.12.0+cu113
