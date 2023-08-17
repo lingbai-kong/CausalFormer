@@ -3,6 +3,7 @@
 Official PyTorch implementation for CauseFormer: An Interpretable Transformer for Temporal Causal Discovery.
 
 ## Requirements
+
 * Python >= 3.5 (3.6 recommended)
 * PyTorch (tested with PyTorch 1.11.0)
 * Optional: CUDA (tested with CUDA 11.3)
@@ -52,6 +53,27 @@ Official PyTorch implementation for CauseFormer: An Interpretable Transformer fo
   ├── train.py - main script to start training
   └── utils
   ```
+
+## Dataset
+
+- Synthetic datasets: [Basic causal structures with additive noise](https://dataverse.harvard.edu/dataverse/basic_causal_structures_additive_noise)
+
+- Lorenz96: 
+
+  > Lorenz, Edward N. "Predictability: A problem partly solved." *Proc. Seminar on predictability*. Vol. 1. No. 1. 1996.
+
+  The Lorenz 96 model is a nonlinear model of climate dynamics as defined below. 
+  $$
+  \frac{dx_{t,i}}{dt}=(x_{t,i+1}-x_{t,i-2})x_{t,i-1}-x_{t,i}+F
+  $$
+  where $x_{t,i}$ is the data of time series $i$ at time slot $t$, and $F$ is a forcing constant that determines the level of non-linearity and chaos in the series. We simulate a Lorenz-96 model with 10 variables and $F\in \left[ 30,40 \right] $ over a time span of 1,000 units.
+
+- fMRI: [NetSim](https://www.fmrib.ox.ac.uk/datasets/netsim/index.html)
+
+### Dataset file format
+
+- Time Series: The time series file is a CSV containing multiple time series. The first row is the header with the names of the time series. Each column represents a time series.
+- Groundtruth Causal Graph: The groundtruth causal graph file contains tuples in the form of (i, j, t), where i is the cause, j is the effect, and t is the time lag.
 
 ## Usage
 
