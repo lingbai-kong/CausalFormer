@@ -63,10 +63,8 @@ Official PyTorch implementation for CauseFormer: An Interpretable Transformer fo
   > Lorenz, Edward N. "Predictability: A problem partly solved." *Proc. Seminar on predictability*. Vol. 1. No. 1. 1996.
 
   The Lorenz 96 model is a nonlinear model of climate dynamics as defined below. 
-  $$
-  \frac{dx_{t,i}}{dt}=(x_{t,i+1}-x_{t,i-2})x_{t,i-1}-x_{t,i}+F
-  $$
-  where $x_{t,i}$ is the data of time series $i$ at time slot $t$, and $F$ is a forcing constant that determines the level of non-linearity and chaos in the series. We simulate a Lorenz-96 model with 10 variables and $F\in \left[ 30,40 \right] $ over a time span of 1,000 units.
+  $$\frac{dx_{t,i}}{dt}=(x_{t,i+1}-x_{t,i-2})x_{t,i-1}-x_{t,i}+F$$
+  where $x_{t,i}$ is the data of time series $i$ at time slot $t$, and $F$ is a forcing constant that determines the level of non-linearity and chaos in the series. We simulate a Lorenz-96 model with 10 variables and $F\in [ 30,40 ]$ over a time span of 1,000 units.
 
 - fMRI: [NetSim](https://www.fmrib.ox.ac.uk/datasets/netsim/index.html)
 
@@ -151,4 +149,5 @@ Config files are in `.json` format:
 
 ## License
 This project is licensed under the  GPL-3.0 License. See LICENSE for more details
+
 This project is based on the [pytorch-template](https://github.com/victoresque/pytorch-template) GitHub template.
