@@ -1,6 +1,6 @@
-# PyTorch Implementation of CauseFormer: An Interpretable Transformer for Temporal Causal Discovery
+# PyTorch Implementation of CausalFormer: An Interpretable Transformer for Temporal Causal Discovery
 
-Official PyTorch implementation for CauseFormer: An Interpretable Transformer for Temporal Causal Discovery.
+Official PyTorch implementation for CausalFormer: An Interpretable Transformer for Temporal Causal Discovery.
 
 ## Requirements
 
@@ -14,7 +14,7 @@ Official PyTorch implementation for CauseFormer: An Interpretable Transformer fo
 
 ## Folder Structure
   ```
-  CauseFormer/
+  CausalFormer/
   ├── base/ - abstract base classes
   │   ├── base_data_loader.py
   │   ├── base_model.py
@@ -45,7 +45,7 @@ Official PyTorch implementation for CauseFormer: An Interpretable Transformer fo
   ├── parse_config.py
   ├── README.md
   ├── requirements.txt
-  ├── runner.py - integrated script to start running CauseFormer
+  ├── runner.py - integrated script to start running CausalFormer
   ├── saved/
   │   ├── models/ - trained models are saved here
   │   └── log/ - default logdir for tensorboard
