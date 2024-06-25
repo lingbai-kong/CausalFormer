@@ -1,6 +1,6 @@
 # PyTorch Implementation of CausalFormer: An Interpretable Transformer for Temporal Causal Discovery
 
-Official PyTorch implementation for CausalFormer: An Interpretable Transformer for Temporal Causal Discovery.
+Official PyTorch implementation for [CausalFormer: An Interpretable Transformer for Temporal Causal Discovery](https://arxiv.org/abs/2406.16708).
 
 ## Requirements
 
@@ -151,3 +151,15 @@ Config files are in `.json` format:
 This project is licensed under the  GPL-3.0 License. See LICENSE for more details
 
 This project is based on the [pytorch-template](https://github.com/victoresque/pytorch-template) GitHub template.
+
+## Cite
+```
+@misc{kong2024causalformer,
+      title={CausalFormer: An Interpretable Transformer for Temporal Causal Discovery}, 
+      author={Lingbai Kong and Wengen Li and Hanchen Yang and Yichao Zhang and Jihong Guan and Shuigeng Zhou},
+      year={2024},
+      eprint={2406.16708},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.LG' full_name='Machine Learning' is_active=True alt_name=None in_archive='cs' is_general=False description='Papers on all aspects of machine learning research (supervised, unsupervised, reinforcement learning, bandit problems, and so on) including also robustness, explanation, fairness, and methodology. cs.LG is also an appropriate primary category for applications of machine learning methods.'}
+}
+```
